@@ -41,9 +41,7 @@ public class BeterMeldenController {
 
     public void beterBevestigen() {
         for (Klas klas : HU.getKlassen()) { //Vind ingelogde leerling
-            //System.out.println(klas);
             for (Student student : klas.getStudenten()) {
-                //System.out.println(student);
                 if (student.getisIngelogd()) {
                     System.out.println(student);
                     student.getStudentZiek();

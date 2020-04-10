@@ -32,6 +32,7 @@ public class ToekomstigAfmeldenController {
     public Button overzicht;
     public Label label;
     public ComboBox tijd;
+
     School HU = School.getSchool();
     ObservableList<String> options =
             FXCollections.observableArrayList(
@@ -43,7 +44,6 @@ public class ToekomstigAfmeldenController {
 
     public void initialize() {
         ComboBoxReden.setItems(options);
-
         ObservableList<Time> option =
                 FXCollections.observableArrayList();
         for (Klas klas : HU.getKlassen()) {
@@ -52,7 +52,6 @@ public class ToekomstigAfmeldenController {
                     sAfspraken = student.afspraken;
                 }
                 for (Afspraak a : sAfspraken) {
-
                     option.add(a.getBeginTijd());
                 }
                 tijd.setItems(option);
@@ -66,8 +65,6 @@ public class ToekomstigAfmeldenController {
             LocalDate datum = DatePickerDate.getValue();
             Object time = tijd.getValue();
             try {
-
-
                 for (Afspraak afs : sAfspraken) {
                     if (afs.getDatum().equals(datum) && afs.getBeginTijd().equals(time)) {
                         afGmeld.add(afs);
@@ -76,15 +73,12 @@ public class ToekomstigAfmeldenController {
                         Stage stage = (Stage) source.getScene().getWindow();
                         stage.close();
                     }
-
-                }} catch (Exception e) {
+                }
+            } catch (Exception e) {
                 label.setText("ddddd");
             }
         } else label.setText("Je moet Datum en reden kiezen");
-
     }
-
-
 
     public void ActionAnnuleren(ActionEvent actionEvent) {
         Button source = (Button) actionEvent.getSource();
@@ -93,12 +87,9 @@ public class ToekomstigAfmeldenController {
     }
 
     public void overzicht(ActionEvent actionEvent) throws Exception {
-
         FXMLLoader loader = new FXMLLoader(getClass().getResource("AfmeldDatum.fxml"));
         Parent root = loader.load();
         Stage newStage = new Stage();
-
-
         newStage.setScene(new Scene(root));
 
         newStage.initModality(Modality.APPLICATION_MODAL);
@@ -108,6 +99,5 @@ public class ToekomstigAfmeldenController {
         newStage.setResizable(false);
 
         initialize();
-
     }
 }

@@ -59,9 +59,6 @@ public class DagInzienDocentController {
         if (i == null) {
             i = LocalDate.now();
         }
-//        System.out.println(i);
-
-        // action event
         date.setText("Datum :" + i); // get the selected date
         ArrayList<String> tijden = new ArrayList<>();
         ArrayList<String> omschrijvingen = new ArrayList<>();
@@ -101,16 +98,8 @@ public class DagInzienDocentController {
     }
 
 
-
-
-
     @FXML
     public void handleButtonAction() {
-//        // label to show the date
-//        date.setText("no date selected");
-//        LocalDate today = LocalDate.now();
-//
-//        date.setText(today.toString());
         HoofdmenuDocentController data = new HoofdmenuDocentController();
         LocalDate cellData = data.getCellData();
         DatePicker d = dp;
@@ -118,7 +107,6 @@ public class DagInzienDocentController {
         LocalDate i = cellData;
         date.setText("Datum: " + i);
 
-        // action event
         LocalDate finalCellData = cellData;
         EventHandler<ActionEvent> event = new EventHandler<ActionEvent>() {
             public void handle(ActionEvent e) {
@@ -162,7 +150,6 @@ public class DagInzienDocentController {
         };
         d.setOnAction(event);
     }
-
 
     public void Terug() {
         Stage stage = (Stage) buttonTerug.getScene().getWindow();

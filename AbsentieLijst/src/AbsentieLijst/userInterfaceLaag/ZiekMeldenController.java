@@ -1,4 +1,5 @@
 package AbsentieLijst.userInterfaceLaag;
+
 import AbsentieLijst.Klas;
 import AbsentieLijst.School;
 import AbsentieLijst.Student;
@@ -26,9 +27,7 @@ public class ZiekMeldenController {
 
     public void ziekBevestigen() {
         for (Klas klas : HU.getKlassen()) { //Vind ingelogde leerling
-            //System.out.println(klas);
             for (Student student : klas.getStudenten()) {
-                //System.out.println(student);
                 if (student.getisIngelogd()) {
                     System.out.println(student);
                     student.getStudentZiek();

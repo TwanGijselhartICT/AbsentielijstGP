@@ -46,7 +46,6 @@ public class HoofdmenuStudentController {
     void initialize() {
         zetNaam();
         DatePickerSkin datePickerSkin = new DatePickerSkin(new DatePicker(LocalDate.now()));
-        //DatePickerContent pop = (DatePickerContent)datePickerSkin.getPopupContent();
         DatePickerContent pop = (DatePickerContent) datePickerSkin.getPopupContent();
         Node popupContent = datePickerSkin.getPopupContent();
         pop.setMinHeight(agendaPane.getMinHeight());
@@ -59,7 +58,6 @@ public class HoofdmenuStudentController {
                     MouseEvent.MOUSE_PRESSED, (e) ->
                     {
                         this.clicked = cell.getItem();
-//                        System.out.println(clicked + "clicked in HM");
                         try {
                             FXMLLoader loader = new FXMLLoader(getClass().getResource("/AbsentieLijst/userInterfaceLaag/DagInzienStudent.fxml"));
                             setCellData(clicked);
@@ -79,12 +77,10 @@ public class HoofdmenuStudentController {
     }
 
     public static void setCellData(LocalDate input){
-//        System.out.println(clicked + "setCellData");
         clicked = input;
     }
 
     public static LocalDate getCellData(){
-//        System.out.println(clicked + " getCellData");
         return clicked;
     }
 
@@ -92,11 +88,9 @@ public class HoofdmenuStudentController {
         List<DateCell> result = new ArrayList<>();
 
         for (Node n : content.getChildren()) {
-//            System.out.println("node " + n + n.getClass());
             if (n instanceof GridPane) {
                 GridPane grid = (GridPane) n;
                 for (Node gChild : grid.getChildren()) {
-//                    System.out.println("grid node: " + gChild + gChild.getClass());
                     if (gChild instanceof DateCell) {
                         result.add((DateCell) gChild);
                     }

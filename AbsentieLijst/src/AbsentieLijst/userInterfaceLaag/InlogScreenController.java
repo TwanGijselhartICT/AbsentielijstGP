@@ -60,13 +60,10 @@ public class InlogScreenController {
             }
         } else {
             for (Klas klas : HU.getKlassen()) {
-//                System.out.println(klas);
                 for (Student student : klas.getStudenten()) {
-//                    System.out.println(student);
                     if (Gebruikersnaam.getText().equals(student.getStudentNaam()) && Wachtwoord.getText().equals(student.getWachtwoord())) {
                         aanroepHoofdmenu(event);
                         student.setIngelogd(true);
-                        //setStudent(student);
 
 
                     } else {
@@ -77,7 +74,7 @@ public class InlogScreenController {
         }
     }
 
-//    public void setStudent(Student input){
+    //    public void setStudent(Student input){
 ////        System.out.println(clicked + "setCellData");
 //        naamStudent = input;
 //
@@ -93,7 +90,7 @@ public class InlogScreenController {
     public void aanroepHoofdmenu(ActionEvent event) throws IOException {
         Pane hoofdM = FXMLLoader.load(getClass().getResource("/AbsentieLijst/userInterfaceLaag/HoofdmenuStudent.fxml"));
         Scene hoofdscene = new Scene(hoofdM);
-        Stage hoofdmenu = (Stage) ((Node)event.getSource()).getScene().getWindow();
+        Stage hoofdmenu = (Stage) ((Node) event.getSource()).getScene().getWindow();
         hoofdmenu.setTitle("Hoofdmenu student");
         hoofdmenu.setScene(hoofdscene);
         hoofdmenu.centerOnScreen();
@@ -107,7 +104,7 @@ public class InlogScreenController {
         Scene hoofdscene = new Scene(hoofdMD);
         Stage hoofdmenuD = (Stage) ((Node) event.getSource()).getScene().getWindow();
         hoofdmenuD.setTitle("Hoofdmenu Docent");
-        hoofdmenuD.setResizable(false);;
+        hoofdmenuD.setResizable(false);
         hoofdmenuD.setScene(hoofdscene);
         hoofdmenuD.getIcons().add(new Image("AbsentieLijst/Footage/calendar.png"));
         hoofdmenuD.show();

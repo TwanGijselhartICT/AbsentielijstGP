@@ -29,8 +29,10 @@ import java.util.List;
 
 
 public class HoofdmenuDocentController {
+
     private static LocalDate clicked;
     public Button verwerken;
+
     @FXML
     private AnchorPane agendaPane;
 
@@ -39,7 +41,6 @@ public class HoofdmenuDocentController {
     @FXML
     void initialize() {
         DatePickerSkin datePickerSkin = new DatePickerSkin(new DatePicker(LocalDate.now()));
-        //DatePickerContent pop = (DatePickerContent)datePickerSkin.getPopupContent();
         DatePickerContent pop = (DatePickerContent) datePickerSkin.getPopupContent();
         Node popupContent = datePickerSkin.getPopupContent();
         pop.setMinHeight(agendaPane.getMinHeight());
@@ -49,11 +50,8 @@ public class HoofdmenuDocentController {
 
         for (DateCell cell : dateCells) {
             cell.addEventHandler(
-                    MouseEvent.MOUSE_PRESSED, (e) ->
-                    {
-
+                    MouseEvent.MOUSE_PRESSED, (e) ->{
                         this.clicked = cell.getItem();
-//                        System.out.println(clicked + "clicked in HM");
                         try {
                             FXMLLoader loader = new FXMLLoader(getClass().getResource("/AbsentieLijst/userInterfaceLaag/DagInzienDocent.fxml"));
                             setCellData(clicked);
@@ -71,12 +69,12 @@ public class HoofdmenuDocentController {
             );
         }
     }
+
     public static void setCellData(LocalDate input){
-//        System.out.println(clicked + "setCellData");
         clicked = input;
     }
+
     public static LocalDate getCellData(){
-//        System.out.println(clicked + " getCellData");
         return clicked;
     }
 
@@ -94,7 +92,6 @@ public class HoofdmenuDocentController {
 
     private static List<DateCell> getAllDateCells(DatePickerContent content) {
         List<DateCell> result = new ArrayList<>();
-
         for (Node n : content.getChildren()) {
             System.out.println("node " + n + n.getClass());
             if (n instanceof GridPane) {
@@ -107,7 +104,6 @@ public class HoofdmenuDocentController {
                 }
             }
         }
-
         return result;
     }
 

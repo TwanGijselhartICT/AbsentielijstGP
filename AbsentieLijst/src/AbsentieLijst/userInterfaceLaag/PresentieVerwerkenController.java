@@ -13,6 +13,7 @@ import javafx.scene.input.MouseEvent;
 import javafx.scene.text.Font;
 import javafx.stage.Stage;
 import javafx.scene.control.*;
+
 import javax.swing.*;
 
 import java.util.ArrayList;
@@ -41,13 +42,10 @@ public class PresentieVerwerkenController {
     ArrayList<Object> absenten = new ArrayList<>();
     ArrayList<Student> Presenten = new ArrayList<>();
     ArrayList<Student> Absenten = new ArrayList<>();
-
-
     School HU = School.getSchool();
 
 
     public void initialize() {
-
         ObservableList<String> option1 = FXCollections.observableArrayList();
         ObservableList<String> option = FXCollections.observableArrayList();
         for (Klas klas : HU.getKlassen()) {
@@ -64,7 +62,6 @@ public class PresentieVerwerkenController {
             }
         }
     }
-
 
     public void aanroepOpslaan(ActionEvent actionEvent) {
         Button source = (Button) actionEvent.getSource();
@@ -92,24 +89,15 @@ public class PresentieVerwerkenController {
                         label.setText(n.getStudentNaam());
                         labels.add(label.getText());
                     }
-
                     System.out.println(labels);
-
-
                     Collections.reverse(labels);
                     LeerlingenBlock.setItems(FXCollections.observableArrayList(labels));
-
                     ArrayList<Label> labels1 = new ArrayList<>();
-
                 }
-
-
                 for (Student a : studenten) {
                     Presenten.add(a);
                     System.out.println(a);
                 }
-
-
             }
         }
 
@@ -139,7 +127,7 @@ public class PresentieVerwerkenController {
     @FXML
     public void handleMouseClickLeerling(MouseEvent arg0) {
         String absent = (String) LeerlingenBlock.getSelectionModel().getSelectedItem();
-        if(!absenten.contains(absent))
+        if (!absenten.contains(absent))
             absenten.add(absent);
         System.out.println(absenten);
 
@@ -151,20 +139,12 @@ public class PresentieVerwerkenController {
             labels1.add(label1);
         }
 
-
         Collections.reverse(labels1);
         AbsentBlock.setItems(FXCollections.observableArrayList(labels1));
 
-
         ArrayList<Label> labels2 = new ArrayList<>();
         ArrayList<CheckBox> checkBoxes = new ArrayList<>();
-
-
     }
-
-
-
-
 
     public void handleMouseClickAbsent(MouseEvent arg0) {
         String absent = (String) LeerlingenBlock.getSelectionModel().getSelectedItem();
@@ -179,14 +159,11 @@ public class PresentieVerwerkenController {
             labels1.add(label1);
         }
 
-
         Collections.reverse(labels1);
         AbsentBlock.setItems(FXCollections.observableArrayList(labels1));
 
-
         ArrayList<Label> labels2 = new ArrayList<>();
         ArrayList<CheckBox> checkBoxes = new ArrayList<>();
-
     }
 }
 

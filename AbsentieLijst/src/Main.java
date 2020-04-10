@@ -24,11 +24,11 @@ Main extends Application {
         Les lesBEP = new Les("BEP", "TCIF-V1BEP1-19", "HL15-2.031", null, null);
         Les lesIPASS = new Les("IPASS", "TCIF-V1IPASS-19", "HL15-2.031", null, null);
 
-        ArrayList<Les> LP_V1SDC = new ArrayList<Les>();
+        ArrayList<Les> LP_V1SDC = new ArrayList<>();
         LP_V1SDC.add(lesOOP);
         LP_V1SDC.add(lesOOAD);
         LP_V1SDC.add(lesGP);
-        ArrayList<Les> LP_V1SDD = new ArrayList<Les>();
+        ArrayList<Les> LP_V1SDD = new ArrayList<>();
         LP_V1SDD.add(lesFEP);
         LP_V1SDD.add(lesBEP);
         LP_V1SDD.add(lesIPASS);
@@ -81,9 +81,7 @@ Main extends Application {
         V1E.setLessen(lesOOP);
         V1E.setLessen(lesOOAD);
         V1E.setLessen(lesGP);
-//        V1E.setLessen(lesFEP);
-//        V1E.setLessen(lesBEP);
-//        V1E.setLessen(lesIPASS);
+
         for (Klas klas : HU.getKlassen()) {
             if (klas.getKlasCode().equals("V1E")) {
                 lesOOP.setBegintijd(Time.valueOf("08:30:00"));
@@ -116,13 +114,20 @@ Main extends Application {
         Afspraak af = new Afspraak("sssss", Time.valueOf("10:10:22"), Time.valueOf("10:55:22"), LocalDate.of(2020, 4, 10));
         ToekomstigAfmeldenController.afGmeld.add(af);
 
-        Daniel.voegAfspraakToe("Dit is de afspraak van daniel", Time.valueOf("12:10:22"), Time.valueOf("12:55:22"), LocalDate.of(2020, 4, 6));
-        Daniel.voegAfspraakToe("Dit is de afspraak van daniel2", Time.valueOf("11:10:22"), Time.valueOf("11:55:22"), LocalDate.of(2020, 4, 6));
-        Twan.voegAfspraakToe("Dit is de afspraak van twan", Time.valueOf("12:10:22"), Time.valueOf("12:55:22"), LocalDate.of(2020, 4, 8));
-        Twan.voegAfspraakToe("Dit is de afspraak van twan2", Time.valueOf("11:10:22"), Time.valueOf("11:55:22"), LocalDate.of(2020, 4, 8));
-        Nick.voegAfspraakToe("Dit is de afspraak van Nick", Time.valueOf("12:10:22"), Time.valueOf("12:55:22"), LocalDate.of(2020, 4, 6));
-        Nick.voegAfspraakToe("Dit is de afspraak van Nick2", Time.valueOf("11:10:22"), Time.valueOf("11:55:22"), LocalDate.of(2020, 4, 6));
+        Daniel.voegAfspraakToe("Dit is de afspraak van daniel 1", Time.valueOf("12:00:00"), Time.valueOf("13:30:00"), LocalDate.of(2020, 4, 10));
+        Daniel.voegAfspraakToe("Dit is de afspraak van daniel 2", Time.valueOf("12:00:00"), Time.valueOf("13:00:00"), LocalDate.of(2020, 4, 11));
+        Daniel.voegAfspraakToe("Dit is de afspraak van daniel 3", Time.valueOf("08:30:00"), Time.valueOf("12:00:00"), LocalDate.of(2020, 4, 12));
+        Daniel.voegAfspraakToe("Dit is de afspraak van daniel 4", Time.valueOf("08:30:00"), Time.valueOf("09:00:00"), LocalDate.of(2020, 4, 13));
 
+        Twan.voegAfspraakToe("Dit is de afspraak van twan 1", Time.valueOf("12:00:00"), Time.valueOf("13:00:00"), LocalDate.of(2020, 4, 10));
+        Twan.voegAfspraakToe("Dit is de afspraak van twan 2", Time.valueOf("11:00:00"), Time.valueOf("12:00:00"), LocalDate.of(2020, 4, 11));
+        Twan.voegAfspraakToe("Dit is de afspraak van twan 3", Time.valueOf("10:00:00"), Time.valueOf("11:30:00"), LocalDate.of(2020, 4, 12));
+        Twan.voegAfspraakToe("Dit is de afspraak van twan 4", Time.valueOf("09:00:00"), Time.valueOf("10:00:00"), LocalDate.of(2020, 4, 13));
+
+        Nick.voegAfspraakToe("Dit is de afspraak van Nick 1", Time.valueOf("13:00:00"), Time.valueOf("14:00:00"), LocalDate.of(2020, 4, 10));
+        Nick.voegAfspraakToe("Dit is de afspraak van Nick 2", Time.valueOf("14:00:00"), Time.valueOf("15:00:00"), LocalDate.of(2020, 4, 11));
+        Nick.voegAfspraakToe("Dit is de afspraak van Nick 3", Time.valueOf("15:00:00"), Time.valueOf("16:00:00"), LocalDate.of(2020, 4, 12));
+        Nick.voegAfspraakToe("Dit is de afspraak van Nick 4", Time.valueOf("16:00:00"), Time.valueOf("17:00:00"), LocalDate.of(2020, 4, 13));
         School.setSchool(HU);
         launch(args);
     }

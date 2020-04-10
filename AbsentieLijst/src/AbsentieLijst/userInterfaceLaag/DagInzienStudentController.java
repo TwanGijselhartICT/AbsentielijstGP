@@ -51,57 +51,41 @@ public class DagInzienStudentController {
     @FXML
     private LocalDate cellData;
 
+    School HU = School.getSchool();
 
     @FXML
     void initialize() {
-
         handleButtonAction();
         handleStart();
     }
 
-    School HU = School.getSchool();
-
-
-
     @FXML
     public void handleStart() {
-
         cellData = HoofdmenuStudentController.getCellData();
-//        System.out.println(cellData+ "celldata in DI");
-
         DatePicker d = dp;
-//        d.setValue(cellData);
         LocalDate i = cellData;
         if (i == null) {
             i = LocalDate.now();
         }
-//        System.out.println(i);
 
         date.setText("Datum :" + i); // get the selected date
         ArrayList<String> tijden = new ArrayList<>();
         ArrayList<String> omschrijvingen = new ArrayList<>();
 
         for (Klas klas : HU.getKlassen()) { //Vind ingelogde leerling
-            //System.out.println(klas);
             for (Student student : klas.getStudenten()) {
-                //System.out.println(student);
                 if (student.getisIngelogd()) {
-//                    System.out.println(student);
                     ArrayList<Afspraak> afspraken = student.getAfspraken();
                     for (Afspraak afspraak : afspraken) {
                         if (afspraak.getDatum().isEqual(i)) {
-//                            System.out.println(afspraak.getDatum());
                             String textAfspraak = afspraak.toString();
                             String[] gesplit = textAfspraak.split(",");
                             tijden.add(gesplit[1] + " - " + gesplit[2]);
                             omschrijvingen.add(gesplit[0]);
-//                            System.out.println(omschrijvingen);
                         }
                     }
                     ArrayList<Les> alleLessen = klas.getLessen();
-//                    System.out.println(klas);
                     for (Les les : alleLessen) {
-//                        System.out.println(les.getDatum());
                         if (les.getDatum().isEqual(i)) {
                             String textLes = les.toString();
                             String[] gesplit = textLes.split(",");
@@ -136,34 +120,23 @@ public class DagInzienStudentController {
     }
     @FXML
     public void handleButtonAction() {
-//        // label to show the date
-//        date.setText("no date selected");
-//        LocalDate today = LocalDate.now();
-//
-//        date.setText(today.toString());
         HoofdmenuStudentController data = new HoofdmenuStudentController();
         LocalDate cellData = data.getCellData();
         DatePicker d = dp;
-//        d.setValue(cellData);
         LocalDate i = cellData;
         date.setText("Datum: " + i);
-
-        // action event
         LocalDate finalCellData = cellData;
         EventHandler<ActionEvent> event = new EventHandler<ActionEvent>() {
-            public void handle(ActionEvent e) {
 
+            public void handle(ActionEvent e) {
                 LocalDate i = finalCellData; // get the date picker value
                 date.setText("Datum :" + i); // get the selected date
                 ArrayList<String> tijden = new ArrayList<>();
                 ArrayList<String> omschrijvingen = new ArrayList<>();
 
                 for (Klas klas : HU.getKlassen()) { //Vind ingelogde leerling
-                    //System.out.println(klas);
                     for (Student student : klas.getStudenten()) {
-                        //System.out.println(student);
                         if (student.getisIngelogd()) {
-//                            System.out.println(student);
                             ArrayList<Afspraak> afspraken = student.getAfspraken();
                             for (Afspraak afspraak : afspraken) {
                                 if (afspraak.getDatum().isEqual(i)) {
@@ -171,7 +144,6 @@ public class DagInzienStudentController {
                                     String[] gesplit = textAfspraak.split(",");
                                     tijden.add(gesplit[1]);
                                     omschrijvingen.add(gesplit[0]);
-//                                    System.out.println(omschrijvingen);
                                 }
                             }
                         }
@@ -198,7 +170,6 @@ public class DagInzienStudentController {
                 activiteitBlock.setItems(FXCollections.observableArrayList(labels2));
             }
         };
-//        d.setOnAction(event);
     }
 
     public void buttonAfspraakToevoegen(ActionEvent event) throws IOException {
