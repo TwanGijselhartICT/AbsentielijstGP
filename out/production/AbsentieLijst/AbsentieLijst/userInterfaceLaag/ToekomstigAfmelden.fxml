@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="AbsentieLijst.userInterfaceLaag.ToekomstigAfmeldenController">
+    <children>
+        <Button fx:id="ButtonOpslaan" layoutX="353.0" layoutY="338.0" mnemonicParsing="false" onAction="#ActionOpslaan"
+                prefHeight="40.0" prefWidth="89.0" text="Opslaan"/>
+        <Button fx:id="ButtonAnnuleren" layoutX="481.0" layoutY="338.0" mnemonicParsing="false"
+                onAction="#ActionAnnuleren" prefHeight="40.0" prefWidth="89.0" text="Annuleren"/>
+        <GridPane layoutX="21.0" layoutY="88.0" prefHeight="192.0" prefWidth="570.0">
+            <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0"/>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0"/>
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES"/>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES"/>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES"/>
+            </rowConstraints>
+            <Label text="Kies een Datum .">
+                <font>
+                    <Font size="18.0"/>
+                </font>
+            </Label>
+            <DatePicker fx:id="DatePickerDate" prefHeight="46.0" prefWidth="318.0" promptText="Kies een datum."
+                        GridPane.columnIndex="1"/>
+            <Label text="Wat is de reden ?" GridPane.rowIndex="2">
+                <font>
+                    <Font size="18.0"/>
+                </font>
+            </Label>
+            <ComboBox fx:id="ComboBoxReden" prefHeight="46.0" prefWidth="318.0" promptText="Kies reden"
+                      GridPane.columnIndex="1" GridPane.rowIndex="2"/>
+            <Label text="Kies Tijd ." GridPane.rowIndex="1">
+                <font>
+                    <Font size="18.0"/>
+                </font>
+            </Label>
+            <ComboBox fx:id="tijd" prefHeight="38.0" prefWidth="285.0" GridPane.columnIndex="1" GridPane.rowIndex="1"/>
+        </GridPane>
+        <Separator layoutY="39.0" prefHeight="27.0" prefWidth="600.0"/>
+        <Separator layoutX="9.0" layoutY="303.0" prefHeight="0.0" prefWidth="592.0"/>
+        <Button fx:id="overzicht" layoutX="236.0" layoutY="338.0" mnemonicParsing="false" onAction="#overzicht"
+                prefHeight="40.0" prefWidth="89.0" text="Overzicht"/>
+        <Label fx:id="label" layoutX="9.0" layoutY="66.0" prefHeight="17.0" prefWidth="202.0"/>
+    </children>
+</AnchorPane>
