@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="210.0"
+            prefWidth="320.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="AbsentieLijst.userInterfaceLaag.ZiekMeldenController">
+    <children>
+        <Label layoutX="94.0" layoutY="48.0" text="Ziek Melden">
+            <font>
+                <Font size="24.0"/>
+            </font>
+        </Label>
+        <Label layoutX="16.0" layoutY="102.0" text="Weet je zeker dat je je voor vandaag wilt ziek melden?"/>
+        <Button fx:id="ziekMeldenBevestigen" layoutX="188.0" layoutY="170.0" mnemonicParsing="false"
+                onAction="#ziekBevestigen" text="Bevestigen"/>
+        <Button fx:id="ziekMeldenAnnuleren" layoutX="57.0" layoutY="169.0" mnemonicParsing="false"
+                onAction="#ziekAnnuleren" prefHeight="26.0" prefWidth="74.0" text="Annuleren"/>
+    </children>
+</AnchorPane>

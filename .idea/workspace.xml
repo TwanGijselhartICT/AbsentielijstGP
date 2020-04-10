@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1aMRUAOaVnNnEeyhTTqT2JQU81C" />
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Calendar_9" />
+    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+  </component>
+  <component name="RunManager">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="AbsentielijstGP" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="414" y="195" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1586543504887">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="414" y="195" key="#com.intellij.execution.impl.EditConfigurationsDialog/1920.0.1920.1080/-1920.0.1920.1040/0.0.1920.1080@0.0.1920.1080" timestamp="1586543504887" />
+    <state x="497" y="136" key="CommitChangelistDialog2" timestamp="1586543651832">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="497" y="136" key="CommitChangelistDialog2/1920.0.1920.1080/-1920.0.1920.1040/0.0.1920.1080@0.0.1920.1080" timestamp="1586543651832" />
+    <state x="440" y="114" key="SettingsEditor" timestamp="1586543513452">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="440" y="114" key="SettingsEditor/1920.0.1920.1080/-1920.0.1920.1040/0.0.1920.1080@0.0.1920.1080" timestamp="1586543513452" />
+  </component>
+</project>
