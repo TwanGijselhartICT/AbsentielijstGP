@@ -61,17 +61,26 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
+    <state x="125" y="72" key="#Notifications" timestamp="1586544806422">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="125" y="72" key="#Notifications/0.0.1536.824@0.0.1536.824" timestamp="1586544806422" />
     <state x="414" y="195" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1586543504887">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="414" y="195" key="#com.intellij.execution.impl.EditConfigurationsDialog/1920.0.1920.1080/-1920.0.1920.1040/0.0.1920.1080@0.0.1920.1080" timestamp="1586543504887" />
-    <state x="497" y="136" key="CommitChangelistDialog2" timestamp="1586543651832">
-      <screen x="0" y="0" width="1920" height="1080" />
+    <state x="398" y="16" key="CommitChangelistDialog2" timestamp="1586544828923">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
+    <state x="398" y="16" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1586544828923" />
     <state x="497" y="136" key="CommitChangelistDialog2/1920.0.1920.1080/-1920.0.1920.1040/0.0.1920.1080@0.0.1920.1080" timestamp="1586543651832" />
     <state x="440" y="114" key="SettingsEditor" timestamp="1586543513452">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="440" y="114" key="SettingsEditor/1920.0.1920.1080/-1920.0.1920.1040/0.0.1920.1080@0.0.1920.1080" timestamp="1586543513452" />
+    <state x="125" y="146" key="Vcs.Push.Dialog.v2" timestamp="1586544785361">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="125" y="146" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1586544785361" />
   </component>
 </project>
