@@ -7,6 +7,7 @@ import java.sql.SQLOutput;
 import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.HashMap;
 import java.util.ResourceBundle;
 
 import AbsentieLijst.Afspraak;
@@ -84,9 +85,26 @@ public class DagInzienStudentController {
                             omschrijvingen.add(gesplit[0]);
                         }
                     }
-                    ArrayList<Les> alleLessen = klas.getLessen();
-                    for (Les les : alleLessen) {
-                        if (les.getDatum().isEqual(i)) {
+                    HashMap<String, Les> alleLessen = klas.getLessen();
+                    System.out.println(alleLessen);
+                    for(String lesNaam : alleLessen.keySet()) {
+                        System.out.println(lesNaam);
+                        if (( "lesOOP" + i + klas.getKlasCode()).equals(lesNaam)){
+                            Les les = alleLessen.get(lesNaam);
+                            String textLes = les.toString();
+                            String[] gesplit = textLes.split(",");
+                            tijden.add(gesplit[3] + " - "+ gesplit[4]);
+                            omschrijvingen.add(gesplit[0] + "       "+ gesplit[2] );
+                        }
+                        if (( "lesOOAD" + i + klas.getKlasCode()).equals(lesNaam)){
+                            Les les = alleLessen.get(lesNaam);
+                            String textLes = les.toString();
+                            String[] gesplit = textLes.split(",");
+                            tijden.add(gesplit[3] + " - "+ gesplit[4]);
+                            omschrijvingen.add(gesplit[0] + "       "+ gesplit[2] );
+                        }
+                        if (( "lesGP" + i + klas.getKlasCode()).equals(lesNaam)){
+                            Les les = alleLessen.get(lesNaam);
                             String textLes = les.toString();
                             String[] gesplit = textLes.split(",");
                             tijden.add(gesplit[3] + " - "+ gesplit[4]);

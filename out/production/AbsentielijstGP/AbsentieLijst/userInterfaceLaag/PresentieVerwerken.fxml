@@ -38,7 +38,7 @@
             </font>
         </TextField>
         <ComboBox fx:id="ComboboxKlassen" layoutX="337.0" layoutY="90.0" onAction="#klas" prefWidth="150.0" />
-        <ComboBox fx:id="ComboboxAfspraak" layoutX="337.0" layoutY="157.0" prefWidth="150.0" />
+        <ComboBox fx:id="ComboboxAfspraak" layoutX="337.0" layoutY="157.0" onAction="#KiesLes" prefWidth="150.0" />
         <Label layoutX="74.0" layoutY="94.0" text="Kies klas .">
             <font>
                 <Font size="18.0" />

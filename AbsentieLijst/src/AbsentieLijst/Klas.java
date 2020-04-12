@@ -1,14 +1,13 @@
 package AbsentieLijst;
 
 import java.util.ArrayList;
-import java.sql.Time;
-import java.time.LocalDate;
+import java.util.HashMap;
 
 public class Klas {
     private int aantalLeerlingen;
     private String klasCode;
     private ArrayList<Student> studenten = new ArrayList<>();
-    private ArrayList<Les> lessen = new ArrayList<>();
+    private HashMap<String, Les> lessen = new HashMap<String, Les>();
 
     public Klas(int al, String kC) {
         aantalLeerlingen = al;
@@ -16,7 +15,7 @@ public class Klas {
     }
 
     public int getAantalLeerlingen() {
-        return aantalLeerlingen;
+        return studenten.size();
     }
 
 
@@ -38,12 +37,12 @@ public class Klas {
         return studenten;
     }
 
-    public void setLessen(Les les){
-        this.lessen.add(les);
+    public void setLessen(HashMap<String, AbsentieLijst.Les> hashMap){
+        this.lessen.putAll(hashMap);
     }
 
     //public ArrayList<Les> getLessen(Time time, Time valueOf, LocalDate of){ return lessen; }
-    public ArrayList<Les> getLessen(){ return lessen; }
+    public HashMap<String, Les> getLessen(){ return lessen; }
 
     @Override
     public String toString() {

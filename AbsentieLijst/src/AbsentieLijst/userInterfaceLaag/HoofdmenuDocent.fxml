@@ -21,7 +21,7 @@
          </font>
       </Label>
       <Button fx:id="verwerken" layoutX="716.0" layoutY="402.0" mnemonicParsing="false" onAction="#prestie" prefHeight="26.0" prefWidth="126.0" text="Presentie verwerken" />
-      <Button layoutX="716.0" layoutY="539.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="126.0" text="Uitloggen" />
+      <Button fx:id="uitloggen" layoutX="716.0" layoutY="539.0" mnemonicParsing="false" onAction="#uitloggen"  prefHeight="26.0" prefWidth="126.0" text="Uitloggen" />
       <ImageView fitHeight="188.0" fitWidth="228.0" layoutX="655.0" layoutY="53.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../../AbsentieLijst/Footage/HU.png" />

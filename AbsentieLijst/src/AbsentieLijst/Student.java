@@ -9,6 +9,7 @@ public class Student {
     private int studentNummer;
     private String wachtwoord;
     public ArrayList<Afspraak> afspraken = new ArrayList<>();
+    public ArrayList<String> afgemeld = new ArrayList<>();
     private boolean studentZiek = false;
     private boolean isIngelogd;
 
@@ -20,7 +21,8 @@ public class Student {
         this.studentZiek = sZ;
 
     }
-
+    public ArrayList getAfgemeld(){return afgemeld;}
+    public void setAfgemeld(String afmelding){afgemeld.add(afmelding);}
     public void setStudentNaam(String studentNaam) {
         this.studentNaam = studentNaam;
     }
