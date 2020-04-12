@@ -83,7 +83,7 @@ public class HoofdmenuDocentController {
         FXMLLoader loader = new FXMLLoader(getClass().getResource("PresentieVerwerken.fxml"));
         Parent root = loader.load();
         Stage stage = new Stage();
-        stage.setTitle("PrestieVerwerken");
+        stage.setTitle("Presentie Verwerken");
         stage.setScene(new Scene(root));
         stage.show();
     }
@@ -93,11 +93,11 @@ public class HoofdmenuDocentController {
     private static List<DateCell> getAllDateCells(DatePickerContent content) {
         List<DateCell> result = new ArrayList<>();
         for (Node n : content.getChildren()) {
-            System.out.println("node " + n + n.getClass());
+//            System.out.println("node " + n + n.getClass());
             if (n instanceof GridPane) {
                 GridPane grid = (GridPane) n;
                 for (Node gChild : grid.getChildren()) {
-                    System.out.println("grid node: " + gChild + gChild.getClass());
+//                    System.out.println("grid node: " + gChild + gChild.getClass());
                     if (gChild instanceof DateCell) {
                         result.add((DateCell) gChild);
                     }

@@ -128,6 +128,13 @@ Main extends Application {
         Nick.voegAfspraakToe("Dit is de afspraak van Nick 2", Time.valueOf("14:00:00"), Time.valueOf("15:00:00"), LocalDate.of(2020, 4, 11));
         Nick.voegAfspraakToe("Dit is de afspraak van Nick 3", Time.valueOf("15:00:00"), Time.valueOf("16:00:00"), LocalDate.of(2020, 4, 12));
         Nick.voegAfspraakToe("Dit is de afspraak van Nick 4", Time.valueOf("16:00:00"), Time.valueOf("17:00:00"), LocalDate.of(2020, 4, 13));
+
+        Jos.voegAfspraakToe("Dit is de afspraak van Jos 1", Time.valueOf("12:00:00"), Time.valueOf("13:00:00"), LocalDate.of(2020, 4, 10));
+        Jos.voegAfspraakToe("Dit is de afspraak van Jos 2", Time.valueOf("11:00:00"), Time.valueOf("12:00:00"), LocalDate.of(2020, 4, 11));
+        Jos.voegAfspraakToe("Dit is de afspraak van Jos 3", Time.valueOf("10:00:00"), Time.valueOf("11:30:00"), LocalDate.of(2020, 4, 12));
+        Jos.voegAfspraakToe("Dit is de afspraak van Jos 4", Time.valueOf("09:00:00"), Time.valueOf("10:00:00"), LocalDate.of(2020, 4, 13));
+
+
         School.setSchool(HU);
         launch(args);
     }

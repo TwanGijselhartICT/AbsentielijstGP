@@ -1,9 +1,12 @@
 
 package AbsentieLijst.userInterfaceLaag;
 
+
+import java.io.IOException;
 import java.net.URL;
 import java.time.LocalDate;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Collections;
 import java.util.ResourceBundle;
 
@@ -15,10 +18,16 @@ import javafx.collections.FXCollections;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
 import javafx.geometry.Insets;
+import javafx.scene.Node;
+import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.*;
+import javafx.scene.image.Image;
+import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.HBox;
+import javafx.scene.layout.Pane;
 import javafx.scene.layout.TilePane;
 import javafx.scene.text.Font;
 import javafx.stage.Stage;
@@ -71,7 +80,7 @@ public class DagInzienDocentController {
                     String[] gesplit = textAfspraak.split(",");
                     tijden.add(gesplit[1]);
                     omschrijvingen.add(gesplit[0]);
-                    System.out.println(omschrijvingen);
+//                    System.out.println(omschrijvingen);
                 }
             }
         }
@@ -123,7 +132,7 @@ public class DagInzienDocentController {
                             String[] gesplit = textAfspraak.split(",");
                             tijden.add(gesplit[1]);
                             omschrijvingen.add(gesplit[0]);
-                            System.out.println(omschrijvingen);
+//                            System.out.println(omschrijvingen);
                         }
                     }
                 }
@@ -149,6 +158,24 @@ public class DagInzienDocentController {
             }
         };
         d.setOnAction(event);
+    }
+
+    @FXML
+    public void handleMouseClickDag(MouseEvent arg0) throws IOException {
+        Label activiteit = (Label) activiteitBlock.getSelectionModel().getSelectedItem();
+//        System.out.println(activiteit);
+        if (activiteit != null){
+            Pane hoofdMD = FXMLLoader.load(getClass().getResource("PresentieVerwerken.fxml"));
+            Scene hoofdscene = new Scene(hoofdMD);
+            Stage presentie = new Stage();
+            presentie.setTitle("Presentie Verwerken");
+            presentie.setResizable(false);
+            presentie.setScene(hoofdscene);
+            presentie.getIcons().add(new Image("AbsentieLijst/Footage/calendar.png"));
+            presentie.show();
+        }
+
+
     }
 
     public void Terug() {
