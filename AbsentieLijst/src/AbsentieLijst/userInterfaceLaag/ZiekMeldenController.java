@@ -5,6 +5,7 @@ import AbsentieLijst.School;
 import AbsentieLijst.Student;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
+import javafx.scene.control.Label;
 import javafx.stage.Stage;
 
 public class ZiekMeldenController {
@@ -19,6 +20,8 @@ public class ZiekMeldenController {
     private Button ziekMeldenAnnuleren;
     @FXML
     private Button ziekMeldenBevestigen;
+    @FXML
+    Label Ziek = new Label();
 
     public void ziekAnnuleren() {
         Stage stage = (Stage) ziekMeldenAnnuleren.getScene().getWindow();
@@ -26,6 +29,10 @@ public class ZiekMeldenController {
     }
 
     public void ziekBevestigen() {
+        Ziek.setText("Je bent ziek");
+
+        System.out.println(Ziek);
+
         for (Klas klas : HU.getKlassen()) { //Vind ingelogde leerling
             for (Student student : klas.getStudenten()) {
                 if (student.getisIngelogd()) {

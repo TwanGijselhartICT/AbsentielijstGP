@@ -30,5 +30,6 @@
          </image>
       </ImageView>
       <AnchorPane fx:id="agendaPane" layoutX="50.0" layoutY="222.0" prefHeight="268.0" prefWidth="644.0" />
+      <Label fx:id="Ziek" layoutX="716.0" layoutY="240.0" prefHeight="34.0" prefWidth="126.0" text="Je bent gezond" />
    </children>
 </AnchorPane>

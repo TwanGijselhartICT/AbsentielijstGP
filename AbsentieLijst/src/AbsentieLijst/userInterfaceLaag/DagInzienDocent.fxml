@@ -33,7 +33,7 @@
             </children>
         </AnchorPane>
       <DatePicker fx:id="dp" layoutX="65.0" layoutY="50.0" onAction="#handleButtonAction" promptText="Selecteer Datum" />
-        <Button layoutX="65.0" layoutY="290.0" mnemonicParsing="false" text="Afspraak toevoegen" />
+        <Button fx:id="buttonAfspraakToevoegenDocent" layoutX="65.0" layoutY="290.0" mnemonicParsing="false" onAction="#buttonAfspraakToevoegenDocent" text="Afspraak toevoegen" />
         <Button fx:id="buttonTerug" layoutX="370.0" layoutY="289.0" mnemonicParsing="false" onAction="#Terug" prefHeight="26.0" prefWidth="122.0" text="Terug" />
       <Label fx:id="date" layoutX="299.0" layoutY="54.0" text="Geen datum geselecteerd" />
    </children>

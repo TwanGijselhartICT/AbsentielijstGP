@@ -1,5 +1,6 @@
 package AbsentieLijst.userInterfaceLaag;
 
+import java.io.IOException;
 import java.net.URL;
 import java.time.LocalDate;
 import java.util.ArrayList;
@@ -14,9 +15,11 @@ import javafx.event.EventHandler;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.geometry.Insets;
+import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.*;
+import javafx.scene.image.Image;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.text.Font;
 import javafx.stage.Stage;
@@ -40,6 +43,8 @@ public class DagInzienDocentController {
     public  ListView activiteitBlock;
     @FXML
     private LocalDate cellData;
+    @FXML
+    private Button buttonAfspraakToevoegenDocent;
 
     private static String lesData;
 
@@ -210,6 +215,19 @@ public class DagInzienDocentController {
         stage.show();
 
 
+    }
+
+    public void buttonAfspraakToevoegenDocent(ActionEvent event) throws IOException {
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("AfspraakToevoegenDocent.fxml"));
+        Parent root = loader.load();
+        Scene dagIS = new Scene(root);
+        Stage dagIST = (Stage) ((Node)event.getSource()).getScene().getWindow();
+        dagIST.setTitle("Nieuwe afspraak");
+        dagIST.setScene(dagIS);
+        dagIST.centerOnScreen();
+        dagIST.setResizable(false);
+        dagIST.getIcons().add(new Image("AbsentieLijst/Footage/calendar.png"));
+        dagIST.show();
     }
 
     public static String getLesData (){

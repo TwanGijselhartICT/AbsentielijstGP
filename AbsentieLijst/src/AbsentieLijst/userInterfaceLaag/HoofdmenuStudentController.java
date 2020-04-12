@@ -42,6 +42,10 @@ public class HoofdmenuStudentController {
     @FXML
     private Label studentNaam;
 
+
+
+
+
     School HU = School.getSchool();
 
     @FXML
@@ -116,6 +120,7 @@ public class HoofdmenuStudentController {
     }
     public void aanroepZiekMelden(ActionEvent event) {
         try {
+
             FXMLLoader loader = new FXMLLoader(getClass().getResource("/AbsentieLijst/userInterfaceLaag/ZiekMelden.fxml"));
             Parent ziekmeldRoot = loader.load();
             Stage stage = new Stage();
