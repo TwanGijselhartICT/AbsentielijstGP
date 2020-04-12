@@ -33,9 +33,9 @@ public class ToekomstigAfmeldenController {
     School HU = School.getSchool();
     ObservableList<String> options =
             FXCollections.observableArrayList(
-                    "Ziek Melden",
+                    "Bruiloft",
                     "Tandarts afspraak",
-                    "Overige"
+                    "Begravenis", "Wegens corona."
             );
 
 

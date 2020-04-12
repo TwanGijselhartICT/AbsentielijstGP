@@ -87,9 +87,9 @@ public class DagInzienDocentController {
                 }
                 for (Klas klas : HU.getKlassen()) {
                     HashMap<String, Les> alleLessen = klas.getLessen();
-                    System.out.println(alleLessen);
+//                    System.out.println(alleLessen);
                     for (String lesNaam : alleLessen.keySet()) {
-                        System.out.println(lesNaam);
+//                        System.out.println(lesNaam);
                         if (( "lesOOP" + i + klas.getKlasCode() ).equals(lesNaam)) {
                             Les les = alleLessen.get(lesNaam);
                             String textLes = les.toString();
@@ -209,7 +209,7 @@ public class DagInzienDocentController {
         FXMLLoader loader = new FXMLLoader(getClass().getResource("PresentieVerwerken.fxml"));
         Parent root = loader.load();
         Stage stage = new Stage();
-        stage.setTitle("PrestieVerwerken");
+        stage.setTitle("Presentie Verwerken");
         stage.setScene(new Scene(root));
         stage.show();
 
