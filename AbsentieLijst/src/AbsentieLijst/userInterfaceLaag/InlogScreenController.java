@@ -50,7 +50,7 @@ public class InlogScreenController {
     void loginKnop(ActionEvent event) throws IOException {
         if (docentBox.isSelected()) {
             for (Docent docent : HU.getDocenten()) {
-                System.out.println(docent.toString());
+//                System.out.println(docent.toString());
                 if (Gebruikersnaam.getText().equals(docent.getInlogcode()) && Wachtwoord.getText().equals(docent.getWachtwoord())) {
                     aanroepHoofdmenuDocent(event);
                     docent.setIngelogd(true);
