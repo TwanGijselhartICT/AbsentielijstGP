@@ -50,10 +50,9 @@ public class InlogScreenController {
     void loginKnop(ActionEvent event) throws IOException {
         if (docentBox.isSelected()) {
             for (Docent docent : HU.getDocenten()) {
-//                System.out.println(docent.toString());
                 if (Gebruikersnaam.getText().equals(docent.getInlogcode()) && Wachtwoord.getText().equals(docent.getWachtwoord())) {
-                    aanroepHoofdmenuDocent(event);
                     docent.setIngelogd(true);
+                    aanroepHoofdmenuDocent(event);
                 } else {
                     Correct.setText("Ongeldige combinatie gebruikersnaam/wachtwoord");
                 }
@@ -62,8 +61,8 @@ public class InlogScreenController {
             for (Klas klas : HU.getKlassen()) {
                 for (Student student : klas.getStudenten()) {
                     if (Gebruikersnaam.getText().equals(student.getStudentNaam()) && Wachtwoord.getText().equals(student.getWachtwoord())) {
-                        aanroepHoofdmenu(event);
                         student.setIngelogd(true);
+                        aanroepHoofdmenu(event);
 
 
                     } else {
@@ -74,16 +73,6 @@ public class InlogScreenController {
         }
     }
 
-    //    public void setStudent(Student input){
-////        System.out.println(clicked + "setCellData");
-//        naamStudent = input;
-//
-//    }
-//
-//    public static Student getStudent(){
-//        System.out.println(naamStudent + " getnaam");
-//        return naamStudent;
-//}
     @FXML
 
 

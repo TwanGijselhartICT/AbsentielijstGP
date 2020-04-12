@@ -86,9 +86,7 @@ public class DagInzienStudentController {
                         }
                     }
                     HashMap<String, Les> alleLessen = klas.getLessen();
-                    System.out.println(alleLessen);
                     for(String lesNaam : alleLessen.keySet()) {
-                        System.out.println(lesNaam);
                         if (( "lesOOP" + i + klas.getKlasCode()).equals(lesNaam)){
                             Les les = alleLessen.get(lesNaam);
                             String textLes = les.toString();

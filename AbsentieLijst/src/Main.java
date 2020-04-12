@@ -21,10 +21,6 @@ public class
 Main extends Application {
 
     public static void main (String[] args) throws Exception {
-//        Les lesFEP = new Les("FEP", "TCIF-V1FEP1-19", "HL15-2.031", null, null, null);
-//        Les lesBEP = new Les("BEP", "TCIF-V1BEP1-19", "HL15-2.031", null, null, null);
-//        Les lesIPASS = new Les("IPASS", "TCIF-V1IPASS-19", "HL15-2.031", null, null, null);
-//
         School HU = new School("HU");
 
         Docent Jos = new Docent("jvreenen", "Jos van Reenen", 1, "1234");

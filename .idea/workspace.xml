@@ -1,12 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="314e259a-404a-4ca3-a494-7822dcfa9053" name="Default Changelist" comment="">
+    <list default="true" id="447e88f0-baa4-471c-b5f2-5cbef3ee07f2" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AbsentieLijst/src/AbsentieLijst/Agenda.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AbsentieLijst/src/AbsentieLijst/Gebruiker.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AbsentieLijst/src/AbsentieLijst/userInterfaceLaag/AfmeldDatumController.java" beforeDir="false" afterPath="$PROJECT_DIR$/AbsentieLijst/src/AbsentieLijst/userInterfaceLaag/AfmeldDatumController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AbsentieLijst/src/AbsentieLijst/userInterfaceLaag/AfspraakToevoegenController.java" beforeDir="false" afterPath="$PROJECT_DIR$/AbsentieLijst/src/AbsentieLijst/userInterfaceLaag/AfspraakToevoegenController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AbsentieLijst/src/AbsentieLijst/userInterfaceLaag/BeterMeldenController.java" beforeDir="false" afterPath="$PROJECT_DIR$/AbsentieLijst/src/AbsentieLijst/userInterfaceLaag/BeterMeldenController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AbsentieLijst/src/AbsentieLijst/userInterfaceLaag/DagInzienDocentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/AbsentieLijst/src/AbsentieLijst/userInterfaceLaag/DagInzienDocentController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AbsentieLijst/src/AbsentieLijst/userInterfaceLaag/DagInzienStudentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/AbsentieLijst/src/AbsentieLijst/userInterfaceLaag/DagInzienStudentController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AbsentieLijst/src/AbsentieLijst/userInterfaceLaag/HoofdmenuDocent.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/AbsentieLijst/src/AbsentieLijst/userInterfaceLaag/HoofdmenuDocent.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AbsentieLijst/src/AbsentieLijst/userInterfaceLaag/HoofdmenuDocentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/AbsentieLijst/src/AbsentieLijst/userInterfaceLaag/HoofdmenuDocentController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AbsentieLijst/src/AbsentieLijst/userInterfaceLaag/HoofdmenuStudent.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/AbsentieLijst/src/AbsentieLijst/userInterfaceLaag/HoofdmenuStudent.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AbsentieLijst/src/AbsentieLijst/userInterfaceLaag/HoofdmenuStudentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/AbsentieLijst/src/AbsentieLijst/userInterfaceLaag/HoofdmenuStudentController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AbsentieLijst/src/AbsentieLijst/userInterfaceLaag/InlogScreenController.java" beforeDir="false" afterPath="$PROJECT_DIR$/AbsentieLijst/src/AbsentieLijst/userInterfaceLaag/InlogScreenController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AbsentieLijst/src/AbsentieLijst/userInterfaceLaag/PresentieVerwerken.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/AbsentieLijst/src/AbsentieLijst/userInterfaceLaag/PresentieVerwerken.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AbsentieLijst/src/AbsentieLijst/userInterfaceLaag/PresentieVerwerkenController.java" beforeDir="false" afterPath="$PROJECT_DIR$/AbsentieLijst/src/AbsentieLijst/userInterfaceLaag/PresentieVerwerkenController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AbsentieLijst/src/AbsentieLijst/userInterfaceLaag/ToekomstigAfmelden.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/AbsentieLijst/src/AbsentieLijst/userInterfaceLaag/ToekomstigAfmelden.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AbsentieLijst/src/AbsentieLijst/userInterfaceLaag/ToekomstigAfmeldenController.java" beforeDir="false" afterPath="$PROJECT_DIR$/AbsentieLijst/src/AbsentieLijst/userInterfaceLaag/ToekomstigAfmeldenController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AbsentieLijst/src/AbsentieLijst/userInterfaceLaag/ZiekMeldenController.java" beforeDir="false" afterPath="$PROJECT_DIR$/AbsentieLijst/src/AbsentieLijst/userInterfaceLaag/ZiekMeldenController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AbsentieLijst/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/AbsentieLijst/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AbsentielijstGP/AbsentieLijst/Agenda.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AbsentielijstGP/AbsentieLijst/userInterfaceLaag/AfmeldDatumController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/AbsentielijstGP/AbsentieLijst/userInterfaceLaag/AfmeldDatumController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AbsentielijstGP/AbsentieLijst/userInterfaceLaag/AfspraakToevoegenController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/AbsentielijstGP/AbsentieLijst/userInterfaceLaag/AfspraakToevoegenController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AbsentielijstGP/AbsentieLijst/userInterfaceLaag/BeterMeldenController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/AbsentielijstGP/AbsentieLijst/userInterfaceLaag/BeterMeldenController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AbsentielijstGP/AbsentieLijst/userInterfaceLaag/DagInzienDocentController$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/AbsentielijstGP/AbsentieLijst/userInterfaceLaag/DagInzienDocentController$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AbsentielijstGP/AbsentieLijst/userInterfaceLaag/DagInzienDocentController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/AbsentielijstGP/AbsentieLijst/userInterfaceLaag/DagInzienDocentController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AbsentielijstGP/AbsentieLijst/userInterfaceLaag/DagInzienStudentController$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/AbsentielijstGP/AbsentieLijst/userInterfaceLaag/DagInzienStudentController$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AbsentielijstGP/AbsentieLijst/userInterfaceLaag/DagInzienStudentController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/AbsentielijstGP/AbsentieLijst/userInterfaceLaag/DagInzienStudentController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AbsentielijstGP/AbsentieLijst/userInterfaceLaag/HoofdmenuDocent.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/AbsentielijstGP/AbsentieLijst/userInterfaceLaag/HoofdmenuDocent.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AbsentielijstGP/AbsentieLijst/userInterfaceLaag/HoofdmenuDocentController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/AbsentielijstGP/AbsentieLijst/userInterfaceLaag/HoofdmenuDocentController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AbsentielijstGP/AbsentieLijst/userInterfaceLaag/HoofdmenuStudent.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/AbsentielijstGP/AbsentieLijst/userInterfaceLaag/HoofdmenuStudent.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AbsentielijstGP/AbsentieLijst/userInterfaceLaag/HoofdmenuStudentController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/AbsentielijstGP/AbsentieLijst/userInterfaceLaag/HoofdmenuStudentController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AbsentielijstGP/AbsentieLijst/userInterfaceLaag/InlogScreenController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/AbsentielijstGP/AbsentieLijst/userInterfaceLaag/InlogScreenController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AbsentielijstGP/AbsentieLijst/userInterfaceLaag/PresentieVerwerken.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/AbsentielijstGP/AbsentieLijst/userInterfaceLaag/PresentieVerwerken.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AbsentielijstGP/AbsentieLijst/userInterfaceLaag/PresentieVerwerkenController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/AbsentielijstGP/AbsentieLijst/userInterfaceLaag/PresentieVerwerkenController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AbsentielijstGP/AbsentieLijst/userInterfaceLaag/ToekomstigAfmelden.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/AbsentielijstGP/AbsentieLijst/userInterfaceLaag/ToekomstigAfmelden.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AbsentielijstGP/AbsentieLijst/userInterfaceLaag/ToekomstigAfmeldenController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/AbsentielijstGP/AbsentieLijst/userInterfaceLaag/ToekomstigAfmeldenController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AbsentielijstGP/AbsentieLijst/userInterfaceLaag/ZiekMeldenController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/AbsentielijstGP/AbsentieLijst/userInterfaceLaag/ZiekMeldenController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AbsentielijstGP/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/AbsentielijstGP/Main.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,25 +94,33 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1877" height="295" key="GridCell.Tab.0.bottom" timestamp="1586705026711">
-      <screen x="0" y="0" width="1920" height="1080" />
+    <state x="2382" y="419" key="Github.CreateGistDialog" timestamp="1586709425110">
+      <screen x="1600" y="0" width="1920" height="1040" />
+    </state>
+    <state x="2382" y="419" key="Github.CreateGistDialog/0.0.1600.860/1600.0.1920.1040@1600.0.1920.1040" timestamp="1586709425110" />
+    <state width="1877" height="209" key="GridCell.Tab.0.bottom" timestamp="1586717848440">
+      <screen x="1600" y="0" width="1920" height="1040" />
     </state>
     <state width="1557" height="136" key="GridCell.Tab.0.bottom/0.0.1600.860/1600.0.1920.1040@0.0.1600.860" timestamp="1586698866838" />
+    <state width="1877" height="209" key="GridCell.Tab.0.bottom/0.0.1600.860/1600.0.1920.1040@1600.0.1920.1040" timestamp="1586717848440" />
     <state width="1877" height="295" key="GridCell.Tab.0.bottom/1920.0.1920.1080/-1920.0.1920.1040/0.0.1920.1080@0.0.1920.1080" timestamp="1586705026711" />
-    <state width="1877" height="295" key="GridCell.Tab.0.center" timestamp="1586705026711">
-      <screen x="0" y="0" width="1920" height="1080" />
+    <state width="1877" height="209" key="GridCell.Tab.0.center" timestamp="1586717848440">
+      <screen x="1600" y="0" width="1920" height="1040" />
     </state>
     <state width="1557" height="136" key="GridCell.Tab.0.center/0.0.1600.860/1600.0.1920.1040@0.0.1600.860" timestamp="1586698866838" />
+    <state width="1877" height="209" key="GridCell.Tab.0.center/0.0.1600.860/1600.0.1920.1040@1600.0.1920.1040" timestamp="1586717848440" />
     <state width="1877" height="295" key="GridCell.Tab.0.center/1920.0.1920.1080/-1920.0.1920.1040/0.0.1920.1080@0.0.1920.1080" timestamp="1586705026711" />
-    <state width="1877" height="295" key="GridCell.Tab.0.left" timestamp="1586705026711">
-      <screen x="0" y="0" width="1920" height="1080" />
+    <state width="1877" height="209" key="GridCell.Tab.0.left" timestamp="1586717848440">
+      <screen x="1600" y="0" width="1920" height="1040" />
     </state>
     <state width="1557" height="136" key="GridCell.Tab.0.left/0.0.1600.860/1600.0.1920.1040@0.0.1600.860" timestamp="1586698866837" />
+    <state width="1877" height="209" key="GridCell.Tab.0.left/0.0.1600.860/1600.0.1920.1040@1600.0.1920.1040" timestamp="1586717848440" />
     <state width="1877" height="295" key="GridCell.Tab.0.left/1920.0.1920.1080/-1920.0.1920.1040/0.0.1920.1080@0.0.1920.1080" timestamp="1586705026711" />
-    <state width="1877" height="295" key="GridCell.Tab.0.right" timestamp="1586705026711">
-      <screen x="0" y="0" width="1920" height="1080" />
+    <state width="1877" height="209" key="GridCell.Tab.0.right" timestamp="1586717848440">
+      <screen x="1600" y="0" width="1920" height="1040" />
     </state>
     <state width="1557" height="136" key="GridCell.Tab.0.right/0.0.1600.860/1600.0.1920.1040@0.0.1600.860" timestamp="1586698866838" />
+    <state width="1877" height="209" key="GridCell.Tab.0.right/0.0.1600.860/1600.0.1920.1040@1600.0.1920.1040" timestamp="1586717848440" />
     <state width="1877" height="295" key="GridCell.Tab.0.right/1920.0.1920.1080/-1920.0.1920.1040/0.0.1920.1080@0.0.1920.1080" timestamp="1586705026711" />
     <state x="512" y="146" key="MultipleFileMergeDialog" timestamp="1586698848536">
       <screen x="0" y="0" width="1600" height="860" />

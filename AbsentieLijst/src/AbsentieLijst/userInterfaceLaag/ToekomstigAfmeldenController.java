@@ -35,18 +35,17 @@ public class ToekomstigAfmeldenController {
             FXCollections.observableArrayList(
                     "Bruiloft",
                     "Tandarts afspraak",
-                    "Begravenis", "Wegens corona."
+                    "Begravenis", "Wegens corona.", "Overig"
             );
 
 
-    public void initialize ( ) {
+    public void initialize() {
         ComboBoxReden.setItems(options);
 
-        }
+    }
 
 
-
-    public void ActionOpslaan (ActionEvent actionEvent) {
+    public void ActionOpslaan(ActionEvent actionEvent) {
         if (DatePickerDate.getValue() != null && ComboBoxReden != null) {
             LocalDate datum = DatePickerDate.getValue();
             Object time = tijd.getValue();
@@ -57,8 +56,8 @@ public class ToekomstigAfmeldenController {
                             HashMap<String, Les> alleLessen = klas.getLessen();
                             for (String lesNaam : alleLessen.keySet()) {
                                 if (alleLessen.get(lesNaam).getDatum().equals(datum)) {
-                                    alleLessen.get(lesNaam).setAbsent(student, (String) ComboBoxReden.getValue());
-                                    student.setAfgemeld(alleLessen.get(lesNaam).getDatum() +alleLessen.get(lesNaam).getLescode() + ComboBoxReden.getValue());
+                                    alleLessen.get(lesNaam).setAbsent(student, " met reden:"+" "+(String) ComboBoxReden.getValue()); //afgemeld_lijst in de les
+                                    student.setAfgemeld("Vooraf afgemeld: " + alleLessen.get(lesNaam).getDatum() + " " + alleLessen.get(lesNaam).getLescode() + " met als reden: " + ComboBoxReden.getValue()); //afgemeld overzicht student.
                                     Button source = (Button) actionEvent.getSource();
                                     Stage stage = (Stage) source.getScene().getWindow();
                                     stage.close();
@@ -67,34 +66,19 @@ public class ToekomstigAfmeldenController {
                         }
                     }
                 }
-                        } catch( Exception e){
-                            label.setText("ddddd");
-                        }
-                    } else label.setText("Je moet Datum en reden kiezen");
-                }
+            } catch (Exception e) {
+                label.setText("ddddd");
+            }
+        } else label.setText("Je moet Datum en reden kiezen");
+    }
 
-                public void ActionAnnuleren ( ActionEvent actionEvent){
-                    Button source = (Button) actionEvent.getSource();
-                    Stage stage = (Stage) source.getScene().getWindow();
-                    stage.close();
-                }
+    public void ActionAnnuleren(ActionEvent actionEvent) {
+        Button source = (Button) actionEvent.getSource();
+        Stage stage = (Stage) source.getScene().getWindow();
+        stage.close();
+    }
 
-                public void overzicht ( ActionEvent actionEvent) throws Exception {
-                    FXMLLoader loader = new FXMLLoader(getClass().getResource("AfmeldDatum.fxml"));
-                    Parent root = loader.load();
-                    Stage newStage = new Stage();
-                    newStage.setScene(new Scene(root));
-
-                    newStage.initModality(Modality.APPLICATION_MODAL);
-                    newStage.setTitle("Afgemelde afspraken");
-                    newStage.getIcons().add(new Image("AbsentieLijst/Footage/calendar.png"));
-                    newStage.showAndWait();
-                    newStage.setResizable(false);
-
-                    initialize();
-                }
-
-    public void DatapickerOnAction (ActionEvent actionEvent) {
+    public void DatapickerOnAction(ActionEvent actionEvent) {
         ObservableList<String> lessen = FXCollections.observableArrayList();
         for (Klas klas : HU.getKlassen()) {
             for (Student student : klas.getStudenten()) {
@@ -105,10 +89,10 @@ public class ToekomstigAfmeldenController {
                     for (Les lesNaam : alleLessen.values())
                         if (lesNaam.getDatum().equals(DatePickerDate.getValue())) {
 //                            for (String les1 : alleLessen.keySet()) {
-                                les.add(lesNaam.getNaam());
+                            les.add(lesNaam.getNaam());
                             lessen.addAll(les);
-                                tijd.setItems(lessen);
-                            }
+                            tijd.setItems(lessen);
+                        }
 
                 }
             }

@@ -30,7 +30,6 @@ public class AfmeldDatumController {
                     }
 
                     for (String afspraak : afspraken) {
-                        System.out.println(afspraken);
                         Label label = new Label(afspraak);
                         label.setFont(new Font("Calibri", 18));
                         label.setPadding(new Insets(10, 10, 10, 10));

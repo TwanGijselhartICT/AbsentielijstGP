@@ -43,11 +43,8 @@ public class BeterMeldenController {
         for (Klas klas : HU.getKlassen()) { //Vind ingelogde leerling
             for (Student student : klas.getStudenten()) {
                 if (student.getisIngelogd()) {
-                    System.out.println(student);
                     student.getStudentZiek();
-                    System.out.println(student.getStudentZiek());
                     student.setStudentZiek(false);
-                    System.out.println(student.getStudentZiek());
                     Stage stage = (Stage) beterMeldenAnnuleren.getScene().getWindow();
                     stage.close();
                 }

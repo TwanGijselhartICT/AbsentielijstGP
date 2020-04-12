@@ -14,12 +14,14 @@ import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.DateCell;
 import javafx.scene.control.DatePicker;
+import javafx.scene.control.Label;
 import javafx.scene.control.skin.DatePickerSkin;
 import javafx.scene.image.Image;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.GridPane;
+import javafx.scene.paint.Color;
 import javafx.stage.Stage;
 
 import java.io.IOException;
@@ -35,11 +37,14 @@ public class HoofdmenuDocentController {
 
     @FXML
     private AnchorPane agendaPane;
+    @FXML
+    Label docentNaam = new Label();
 
     School HU = School.getSchool();
 
     @FXML
     void initialize() {
+        zetNaam();
         DatePickerSkin datePickerSkin = new DatePickerSkin(new DatePicker(LocalDate.now()));
         DatePickerContent pop = (DatePickerContent) datePickerSkin.getPopupContent();
         Node popupContent = datePickerSkin.getPopupContent();
@@ -78,26 +83,22 @@ public class HoofdmenuDocentController {
         return clicked;
     }
 
+    public void zetNaam() {
+        for (Docent docent : HU.getDocenten()) {
+            if (docent.getIsIngelogd()) {
+                docentNaam.setText(docent.getNaam());
+                docentNaam.setTextFill(Color.web("#00a1e1"));
+            }
 
-    public void prestie (ActionEvent actionEvent) throws Exception {
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("PresentieVerwerken.fxml"));
-        Parent root = loader.load();
-        Stage stage = new Stage();
-        stage.setTitle("Presentie Verwerken");
-        stage.setScene(new Scene(root));
-        stage.show();
+        }
     }
-
-
 
     private static List<DateCell> getAllDateCells(DatePickerContent content) {
         List<DateCell> result = new ArrayList<>();
         for (Node n : content.getChildren()) {
-//            System.out.println("node " + n + n.getClass());
             if (n instanceof GridPane) {
                 GridPane grid = (GridPane) n;
                 for (Node gChild : grid.getChildren()) {
-//                    System.out.println("grid node: " + gChild + gChild.getClass());
                     if (gChild instanceof DateCell) {
                         result.add((DateCell) gChild);
                     }

@@ -5,28 +5,26 @@
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
-<?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="AbsentieLijst.userInterfaceLaag.HoofdmenuDocentController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="514.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="AbsentieLijst.userInterfaceLaag.HoofdmenuDocentController">
    <children>
-      <Label layoutX="54.0" layoutY="99.0" text="Welkom, [Docent]">
+      <ImageView fitHeight="138.0" fitWidth="563.0" layoutX="50.0" layoutY="28.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Footage/banner.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="docentNaam" layoutX="50.0" layoutY="166.0" text="[Docent]">
          <font>
             <Font size="30.0" />
          </font>
       </Label>
-      <Label layoutX="54.0" layoutY="53.0" text="Hogeschool Utrecht">
-         <font>
-            <Font size="30.0" />
-         </font>
-      </Label>
-      <Button fx:id="verwerken" layoutX="716.0" layoutY="402.0" mnemonicParsing="false" onAction="#prestie" prefHeight="26.0" prefWidth="126.0" text="Presentie verwerken" />
-      <Button fx:id="uitloggen" layoutX="716.0" layoutY="539.0" mnemonicParsing="false" onAction="#uitloggen"  prefHeight="26.0" prefWidth="126.0" text="Uitloggen" />
+      <Button fx:id="uitloggen" layoutX="716.0" layoutY="471.0" mnemonicParsing="false" onAction="#uitloggen" prefHeight="26.0" prefWidth="126.0" text="Uitloggen" />
       <ImageView fitHeight="188.0" fitWidth="228.0" layoutX="655.0" layoutY="53.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../../AbsentieLijst/Footage/HU.png" />
          </image>
       </ImageView>
-      <AnchorPane fx:id="agendaPane" layoutX="54.0" layoutY="156.0" prefHeight="380.0" prefWidth="587.0" />
+      <AnchorPane fx:id="agendaPane" layoutX="50.0" layoutY="222.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="268.0" prefWidth="644.0" />
    </children>
 </AnchorPane>

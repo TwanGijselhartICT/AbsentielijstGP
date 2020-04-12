@@ -22,7 +22,7 @@
       <Button layoutX="716.0" layoutY="294.0" mnemonicParsing="false" onAction="#aanroepZiekMelden" prefHeight="26.0" prefWidth="126.0" text="Ziek melden" />
       <Button layoutX="716.0" layoutY="330.0" mnemonicParsing="false" onAction="#aanroepBeterMelden" prefHeight="26.0" prefWidth="126.0" text="Beter melden" />
       <Button layoutX="716.0" layoutY="366.0" mnemonicParsing="false" onAction="#aanroepAbsentiePlannen" prefHeight="26.0" prefWidth="126.0" text="Absentie plannen" />
-      <Button layoutX="716.0" layoutY="402.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="126.0" text="Presentie inzien" />
+      <Button layoutX="716.0" layoutY="402.0" mnemonicParsing="false" onAction="#overzicht" prefHeight="26.0" prefWidth="126.0" text="Presentie inzien" />
       <Button layoutX="716.0" layoutY="471.0" mnemonicParsing="false" onAction="#uitloggen" prefHeight="26.0" prefWidth="126.0" text="Uitloggen" />
       <ImageView fitHeight="188.0" fitWidth="228.0" layoutX="667.0" layoutY="28.0" pickOnBounds="true" preserveRatio="true">
          <image>

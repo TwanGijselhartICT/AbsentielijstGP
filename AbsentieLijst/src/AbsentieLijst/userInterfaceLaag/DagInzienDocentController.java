@@ -87,9 +87,7 @@ public class DagInzienDocentController {
                 }
                 for (Klas klas : HU.getKlassen()) {
                     HashMap<String, Les> alleLessen = klas.getLessen();
-//                    System.out.println(alleLessen);
                     for (String lesNaam : alleLessen.keySet()) {
-//                        System.out.println(lesNaam);
                         if (( "lesOOP" + i + klas.getKlasCode() ).equals(lesNaam)) {
                             Les les = alleLessen.get(lesNaam);
                             String textLes = les.toString();
@@ -166,7 +164,6 @@ public class DagInzienDocentController {
                             String[] gesplit = textAfspraak.split(",");
                             tijden.add(gesplit[1]);
                             omschrijvingen.add(gesplit[0]);
-                            //                           System.out.println(omschrijvingen);
                         }
                     }
                 }
@@ -202,7 +199,6 @@ public class DagInzienDocentController {
     }
 
     public void MouseClickEvent (MouseEvent mouseEvent) throws Exception {
-       // getLes();
         String leslabel = (String) activiteitBlock.getSelectionModel().getSelectedItem();
         this.lesData = leslabel;
 

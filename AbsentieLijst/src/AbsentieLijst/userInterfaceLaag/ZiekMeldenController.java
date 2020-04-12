@@ -29,11 +29,8 @@ public class ZiekMeldenController {
         for (Klas klas : HU.getKlassen()) { //Vind ingelogde leerling
             for (Student student : klas.getStudenten()) {
                 if (student.getisIngelogd()) {
-                    System.out.println(student);
                     student.getStudentZiek();
-                    System.out.println(student.getStudentZiek());
                     student.setStudentZiek(true);
-                    System.out.println(student.getStudentZiek());
                     Stage stage = (Stage) ziekMeldenAnnuleren.getScene().getWindow();
                     stage.close();
                 }

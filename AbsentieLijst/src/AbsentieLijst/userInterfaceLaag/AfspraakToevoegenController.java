@@ -59,7 +59,6 @@ public class AfspraakToevoegenController {
             }
         } catch (Exception e) {
             label.setText("Voer een geldig tijd in.");
-//            e.printStackTrace();
         }
     }
 

@@ -1,53 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.Button?>
-<?import javafx.scene.control.ComboBox?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.ListView?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="484.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="AbsentieLijst.userInterfaceLaag.PresentieVerwerkenController">
+<AnchorPane prefHeight="701.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="AbsentieLijst.userInterfaceLaag.PresentieVerwerkenController">
     <children>
         <Label fx:id="PresentieLabeL" layoutX="215.0" layoutY="41.0" text="Absentie verwerken">
             <font>
                 <Font size="18.0" />
             </font>
         </Label>
-        <Button fx:id="Opslaan" layoutX="494.0" layoutY="681.0" mnemonicParsing="false" onAction="#aanroepOpslaan" text="Opslaan">
-            <font>
-                <Font size="14.0" />
-            </font>
-        </Button>
-        <Button fx:id="Cancel" layoutX="393.0" layoutY="681.0" mnemonicParsing="false" onAction="#AanroepCancel" text="Cancel   ">
-            <font>
-                <Font size="14.0" />
-            </font>
-        </Button>
-        <ListView fx:id="LeerlingenBlock" layoutX="29.0" layoutY="238.0" onMouseClicked="#handleMouseClickLeerling" prefHeight="354.0" prefWidth="256.0" />
-        <ListView fx:id="AbsentBlock" layoutX="309.0" layoutY="238.0" onMouseClicked="#handleMouseClickAbsent" prefHeight="354.0" prefWidth="256.0" />
-        <TextField alignment="CENTER" layoutX="38.0" layoutY="208.0" prefHeight="19.0" prefWidth="238.0" text="Leerlingen">
+        <ListView fx:id="LeerlingenBlock" layoutX="29.0" layoutY="119.0" onMouseClicked="#handleMouseClickLeerling" prefHeight="473.0" prefWidth="256.0" />
+        <ListView fx:id="AbsentBlock" layoutX="309.0" layoutY="119.0" onMouseClicked="#handleMouseClickAbsent" prefHeight="473.0" prefWidth="256.0" />
+        <TextField alignment="CENTER" editable="false" layoutX="38.0" layoutY="82.0" prefHeight="19.0" prefWidth="238.0" text="Presente Leerlingen">
             <font>
                 <Font size="14.0" />
             </font>
         </TextField>
-        <TextField alignment="CENTER" layoutX="318.0" layoutY="208.0" prefHeight="21.0" prefWidth="238.0" text="Absent">
+        <TextField alignment="CENTER" editable="false" layoutX="318.0" layoutY="82.0" prefHeight="21.0" prefWidth="238.0" text="Absente Leerlingen">
             <font>
                 <Font size="14.0" />
             </font>
         </TextField>
-<!--        <ComboBox fx:id="ComboboxKlassen" layoutX="337.0" layoutY="90.0" onAction="#klas" prefWidth="150.0" />-->
-<!--        <ComboBox fx:id="ComboboxAfspraak" layoutX="337.0" layoutY="157.0" onAction="#KiesLes" prefWidth="150.0" />-->
-        <Label layoutX="74.0" layoutY="94.0" text="Kies klas .">
-            <font>
-                <Font size="18.0" />
-            </font>
-        </Label>
-        <Label layoutX="74.0" layoutY="161.0" text="Kies les .">
-            <font>
-                <Font size="18.0" />
-            </font>
-        </Label>
+      <BorderPane layoutX="386.0" layoutY="628.0" prefHeight="64.0" prefWidth="200.0">
+         <center>
+              <Button fx:id="Cancel" mnemonicParsing="false" onAction="#AanroepCancel" text="Cancel   " BorderPane.alignment="CENTER">
+                  <font>
+                      <Font size="14.0" />
+                  </font>
+              </Button>
+         </center>
+         <right>
+              <Button fx:id="Opslaan" mnemonicParsing="false" onAction="#aanroepOpslaan" text="Opslaan" BorderPane.alignment="CENTER">
+                  <font>
+                      <Font size="14.0" />
+                  </font>
+              </Button>
+         </right>
+      </BorderPane>
     </children>
 </AnchorPane>

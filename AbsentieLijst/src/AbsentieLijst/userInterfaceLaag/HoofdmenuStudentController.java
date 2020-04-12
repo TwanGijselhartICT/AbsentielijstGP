@@ -19,6 +19,8 @@ import javafx.scene.image.Image;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.GridPane;
+import javafx.scene.paint.Color;
+import javafx.stage.Modality;
 import javafx.stage.Stage;
 
 import java.io.IOException;
@@ -107,6 +109,7 @@ public class HoofdmenuStudentController {
             for (Student student : klas.getStudenten()) {
                 if (student.getisIngelogd()) {
                     studentNaam.setText(student.getStudentNaam());
+                    studentNaam.setTextFill(Color.web("#00a1e1"));
                 }
             }
         }
@@ -177,6 +180,18 @@ public class HoofdmenuStudentController {
             e.printStackTrace();
         }
 
+    }
+    public void overzicht(ActionEvent actionEvent) throws Exception {
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("AfmeldDatum.fxml"));
+        Parent root = loader.load();
+        Stage newStage = new Stage();
+        newStage.setScene(new Scene(root));
+
+        newStage.initModality(Modality.APPLICATION_MODAL);
+        newStage.setTitle("Afgemelde Lessen en Afspraken");
+        newStage.getIcons().add(new Image("AbsentieLijst/Footage/calendar.png"));
+        newStage.showAndWait();
+        newStage.setResizable(false);
     }
 }
 
